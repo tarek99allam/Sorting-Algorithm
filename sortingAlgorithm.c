@@ -121,14 +121,13 @@ ES_t sorting_By_Insertion(int arr[], int size)
         {
             if (arr[counter1] > arr[posIndex])
             {
-               
+
                 move_Right_Helper(arr, counter1, posIndex);
-                showArray(arr, 10);
+                // showArray(arr, 10); for debug
 
                 break;
             }
         }
-        // printf("f \n");
 
         errorstate = ES_OK;
     }
