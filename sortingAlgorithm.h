@@ -1,6 +1,6 @@
 /* ********************************************************************************************
-/* @name     : SORTINGALGORITHM.C
-/* @brief    : WIRTE PROGRAMS OF SORTING ALFORITHM
+/* @name     : SORTINGALGORITHM.H
+/* @brief    : WIRTE DECLERATIONS PROGRAMS OF SORTING ALFORITHM
 /* @author   : TAREK ALLAM
 /***********************************************************************************************/
 
@@ -22,6 +22,5 @@ ES_t sorting_By_Insertion(int arr[], int size);
 /************************************************************************************************
  * AUTHOR                 DATE                    BRIEF
  ************************************************************************************************
- * TAREK ALLAM         16 NOV 2022             write programs
- *
+ * TAREK ALLAM         16 NOV 2022             declerations
  */
