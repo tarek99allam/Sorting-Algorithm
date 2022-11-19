@@ -114,24 +114,23 @@ ES_t sorting_By_Selection(int arr[], int size)
 ES_t sorting_By_Insertion(int arr[], int size)
 {
     ES_t errorstate = ES_NOK;
-    uint32 counter1, posIndex;
-    for (posIndex = 1; posIndex < size; posIndex++)
+    sint32 key, j;
+    for (int x = 1; x < size; x++)
     {
-        for (counter1 = 0; counter1 < posIndex; counter1++) // find the minimun
+        key = arr[x];
+        j = x - 1;
+
+        while (j >= 0 && arr[j] > key)
         {
-            if (arr[counter1] > arr[posIndex])
-            {
-
-                move_Right_Helper(arr, counter1, posIndex);
-                // showArray(arr, 10); for debug
-
-                break;
-            }
+            arr[j + 1] = arr[j];
+            j--;
         }
-        // printf("f \n");
-
-        errorstate = ES_OK;
+        // showArray(arr, 10);
+        arr[j + 1] = key;
     }
+
+    errorstate = ES_OK;
+
     return errorstate;
 }
 
